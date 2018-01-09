@@ -1,0 +1,28 @@
+STEPS TO RUN
+-------------
+
+1. Start the master
+./dfsmaster master_port_no
+Eg:
+./dfsmaster 12345
+
+2. Start the server
+./dfsserver server_port master_hostname master_port <remote-username> <server_rootdir>
+Eg:
+./dfsserver 20000 master_hostname 12345
+
+<remote-username> and <rootdir> should only be used to test multiple servers after establishing ssh authentication without password prompt with the necessary public-private key pairs
+
+3. Start the client
+./dfsclient local_mountpoint server_rootdir master_hostname master_port
+
+4. Running Postmark
+a) compile and run postmark program
+
+b) At the prompt set the location to mountpoint as below
+set location mountpoint
+
+c) set to unbuffered mode
+set buffering false
+
+d) run
