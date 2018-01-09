@@ -1,3 +1,13 @@
+This program uses fuse (Filesystem in user space) application. The purpose of
+this program is to create a distributed filesystem which has a master and
+multiple servers and clients. It has the added support failover if the master 
+fails and high availability.
+
+This project was developed with Avinash as an academic project.
+
+Read about the assumptions we have made in the pdf file.
+
+
 STEPS TO RUN
 -------------
 
